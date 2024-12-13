@@ -23,6 +23,7 @@ const Shop = () => {
       addToCart(item);
       toast.success('Item added to cart!');
     } else {
+      console.log(error);
       toast.error('Item is already in the cart!');
     }
   };
