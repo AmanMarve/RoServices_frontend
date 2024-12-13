@@ -10,14 +10,6 @@ const BookApp = () => {
   const [date, setDate] = useState("");
   const [error, setError] = useState("");
 
-  const mystyle = {
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "center",
-    height: "100vh",
-    width: "100vw",
-  };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -43,6 +35,7 @@ const BookApp = () => {
       console.log(result.error);
       setError(result.error);
       toast.error("API ERROR");
+      console.log(error)
     }
 
     if (response.ok) {
