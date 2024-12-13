@@ -13,9 +13,7 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        <a
-          href="https://wa.me/9049384729"
-          target="_blank"
+        <a href="https://wa.me/9049384729"
           class="fixed bottom-4 right-4 rounded-full  hover:bg-green-600 transition-all duration-300 z-50"
         >
           <img

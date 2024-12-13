@@ -12,6 +12,7 @@ const ImgCard = () => {
         if (!response.ok) {
             console.log(result.error);
             setError(result.error);
+            console.log(error);
         }
 
         if (response.ok) {
@@ -33,7 +34,7 @@ const ImgCard = () => {
                         {data.filter((ele) => ele.subcategory === "RO purifier").map((ele) => (
                             <div key={ele.id} className="h-2/1 hover:-translate-y-3 transition duration-500 delay-500 hover:border-blue-400 p-3 mt-4 rounded-xl border-gray-400 border">
                                 <div className="flex justify-center h-32 w-36">
-                                    <img className="flex w-23 h-32" src={ele.image} alt="image" />
+                                    <img className="flex w-23 h-32" src={ele.image} alt="card-img" />
                                 </div>
                             </div>
                         ))}
@@ -46,7 +47,7 @@ const ImgCard = () => {
                         {data.filter((ele) => ele.subcategory === "RO purifier").map((ele) => (
                             <div key={ele.id} className="flex flex-col items-center"> {/* Center images */}
                                 <div className="flex justify-center h-14 w-14 mb-1 overflow-hidden"> {/* Smaller fixed size */}
-                                    <img className="w-full h-full object-contain" src={ele.image} alt="image" /> {/* Keep images contained */}
+                                    <img className="w-full h-full object-contain" src={ele.image} alt="mobile-view-card" /> {/* Keep images contained */}
                                 </div>
                             </div>
                         ))}
