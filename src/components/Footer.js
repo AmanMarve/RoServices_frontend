@@ -12,13 +12,13 @@ const Footer = () => {
         <div>
           <MdOutlineMailOutline className="h-8 w-8 mx-auto mb-2" />
           <h5 className="text-md font-bold">Mail Us</h5>
-          <p className="text-sm text-gray-300">User@gmail.com</p>
+          <p className="text-sm text-gray-300">ganeshderkar@gmail.com</p>
         </div>
 
         <div>
           <IoCallOutline className="h-8 w-8 mx-auto mb-2" />
           <h5 className="text-md font-bold">Call Us</h5>
-          <p className="text-sm text-gray-300">9876543210</p>
+          <p className="text-sm text-gray-300">9049384729</p>
         </div>
 
         <div>
@@ -30,7 +30,7 @@ const Footer = () => {
       </div>
 
       <div className="text-center text-sm text-gray-400 mt-6">
-        © 2024 Aman Marve. All rights reserved.
+        © 2024 Ganesh Derkar. All rights reserved.
       </div>
     </footer>
   );
